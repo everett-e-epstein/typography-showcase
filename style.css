@@ -1,0 +1,879 @@
+/* =============================================
+   MODULAR TYPOGRAPHY PROJECT - STYLE SHEET
+   ============================================= */
+
+/* ==== FONT FACE DECLARATIONS ==== */
+
+/* Base system font - Diatype Thin with fallbacks */
+@font-face {
+  font-family: 'Diatype Thin';
+  src: local('Diatype Thin'), 
+       local('Diatype-Thin'),
+       local('Inter Thin'),
+       local('SF Pro Text Light'),
+       local('Segoe UI Light'),
+       local('Roboto Light'),
+       local('Helvetica Neue Light'),
+       local('Arial');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Student typefaces - Spring 2025 */
+@font-face {
+  font-family: Cora;
+  src: url('Fonts/Cora-optimized.woff2') format('woff2'),
+       url('Fonts/Cora-optimized.woff') format('woff'),
+       url('Fonts/Cora-optimized.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Tess;
+  src: url('./Fonts/Tess.woff2') format('woff2'),
+       url('./Fonts/Tess.woff') format('woff'),
+       url('./Fonts/Tess.otf') format('opentype');
+}
+
+/* ABC Diatype Edu Font Family */
+@font-face {
+  font-family: 'ABC Diatype Edu';
+  src: url('./Fonts/ABCDiatypeEdu-Regular.woff2') format('woff2'),
+       url('./Fonts/ABCDiatypeEdu-Regular.woff') format('woff'),
+       url('./Fonts/ABCDiatypeEdu-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABC Diatype Edu';
+  src: url('./Fonts/ABCDiatypeEdu-Bold.woff2') format('woff2'),
+       url('./Fonts/ABCDiatypeEdu-Bold.woff') format('woff'),
+       url('./Fonts/ABCDiatypeEdu-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABC Diatype Edu';
+  src: url('./Fonts/ABCDiatypeEdu-Light.woff2') format('woff2'),
+       url('./Fonts/ABCDiatypeEdu-Light.woff') format('woff'),
+       url('./Fonts/ABCDiatypeEdu-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABC Diatype Edu';
+  src: url('./Fonts/ABCDiatypeEdu-Medium.woff2') format('woff2'),
+       url('./Fonts/ABCDiatypeEdu-Medium.woff') format('woff'),
+       url('./Fonts/ABCDiatypeEdu-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABC Diatype Edu';
+  src: url('./Fonts/ABCDiatypeEdu-Thin.woff2') format('woff2'),
+       url('./Fonts/ABCDiatypeEdu-Thin.woff') format('woff'),
+       url('./Fonts/ABCDiatypeEdu-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Individual Typefaces */
+@font-face {
+  font-family: 'Brandon';
+  src: url('./Fonts/Brandon.woff2') format('woff2'),
+       url('./Fonts/Brandon.woff') format('woff'),
+       url('./Fonts/Brandon.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Callie';
+  src: url('./Fonts/Callie.woff2') format('woff2'),
+       url('./Fonts/Callie.woff') format('woff'),
+       url('./Fonts/Callie.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Caroline';
+  src: url('./Fonts/Caroline.woff2') format('woff2'),
+       url('./Fonts/Caroline.woff') format('woff'),
+       url('./Fonts/Caroline.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Macy';
+  src: url('./Fonts/Macy.woff2') format('woff2'),
+       url('./Fonts/Macy.woff') format('woff'),
+       url('./Fonts/Macy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Rachel';
+  src: url('./Fonts/Rachel.woff2') format('woff2'),
+       url('./Fonts/Rachel.woff') format('woff'),
+       url('./Fonts/Rachel.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Rowan';
+  src: url('./Fonts/Rowan.woff2') format('woff2'),
+       url('./Fonts/Rowan.woff') format('woff'),
+       url('./Fonts/Rowan.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Tallulah';
+  src: url('./Fonts/Tallulah.woff2') format('woff2'),
+       url('./Fonts/Tallulah.woff') format('woff'),
+       url('./Fonts/Tallulah.otf') format('opentype');
+}
+
+/* ==== GLOBAL STYLES ==== */
+
+body {
+  font-family: 'Diatype Thin', 'Inter Thin', -apple-system, BlinkMacSystemFont, 'Segoe UI Light', 'Roboto Light', 'Helvetica Neue Light', Arial, sans-serif;
+  background: #fafafa;
+  color: #1a1a1a;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* ==== SCROLLBAR STYLES ==== */
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d3d3d3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ==== TYPOGRAPHY ==== */
+
+h1 {
+  left: 10px;
+  font-family: sans-serif;
+  font-size: 0.875em;
+}
+
+p {
+  width: 97%;
+  overflow-x: hidden;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#introText {
+    font-size: 1.875em;
+    text-align: left;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+/* ==== LAYOUT COMPONENTS ==== */
+
+.intro {
+  display: none;
+}
+
+.about {
+  display: block;
+}
+
+.header {
+  position: fixed;
+}
+
+#block {
+  height: 50px;
+}
+
+#info {
+  display: block;
+  width: 98vw;
+  min-width: 350px;
+  margin-bottom: 80px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 1.875em;
+}
+
+.allTypeThings {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.typeInfo {
+  display: flex;
+  flex-direction: column;
+  border-top: solid;
+  justify-content: flex-start;
+  padding: 20px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  flex: 0 0 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* ICASF-inspired color palette for typeInfo backgrounds */
+.typeInfo:nth-child(8n+1) {
+  background-color: #ffffff; /* Pure white - gallery wall */
+  border: 1px solid #e8e8e8;
+}
+
+.typeInfo:nth-child(8n+2) {
+  background-color: #f7f7f7; /* Light gallery gray */
+  border: 1px solid #e0e0e0;
+}
+
+.typeInfo:nth-child(8n+3) {
+  background-color: #f2f2f2; /* Contemporary neutral */
+  border: 1px solid #d8d8d8;
+}
+
+.typeInfo:nth-child(8n+4) {
+  background-color: #eeeeee; /* Soft exhibition space */
+  border: 1px solid #d0d0d0;
+}
+
+.typeInfo:nth-child(8n+5) {
+  background-color: #fafafa; /* Clean modern white */
+  border: 1px solid #e5e5e5;
+}
+
+.typeInfo:nth-child(8n+6) {
+  background-color: #f5f5f5; /* Minimalist gray */
+  border: 1px solid #dcdcdc;
+}
+
+.typeInfo:nth-child(8n+7) {
+  background-color: #f0f0f0; /* Museum-quality neutral */
+  border: 1px solid #d5d5d5;
+}
+
+.typeInfo:nth-child(8n+8) {
+  background-color: #ededed; /* Contemporary art space */
+  border: 1px solid #d2d2d2;
+}
+
+/* ICASF-inspired hover effects */
+.typeInfo:hover {
+  background-color: #e8e8e8 !important;
+  border-color: #c0c0c0 !important;
+  color: #1a1a1a !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(26, 26, 26, 0.15);
+}
+
+/* Additional Amant-inspired styling - removed duplicate as it's now in main .typeInfo rule */
+
+/* ICASF-inspired subtle alternating patterns */
+.typeInfo:nth-child(odd) {
+  border-left: 2px solid rgba(26, 26, 26, 0.08);
+}
+
+.typeInfo:nth-child(even) {
+  border-right: 2px solid rgba(26, 26, 26, 0.08);
+}
+
+.typefaceNameDIV {
+  padding-top: 10px;
+  min-width: 200px;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+}
+
+/* ==== TYPOGRAPHY DISPLAY ELEMENTS ==== */
+
+.className {
+  font-size: 1.875em;
+  margin-bottom: 30px;
+  border: 2px solid #1a1a1a;
+  width: fit-content;
+  border-radius:40px;
+  margin-left: 20px;
+  padding: 8px 16px;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  flex: 0 0 auto;
+  text-align: left;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+
+.className .letter {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.className:hover .letter:nth-child(even) {
+  transform: scaleY(-1);
+}
+
+.typefaceName {
+  font-size: 1.875em;
+  text-transform: none;
+  padding: 0px 0px;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+}
+
+.typefaceName .letter {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.typefaceName:hover .letter:nth-child(even) {
+  transform: scaleY(-1);
+}
+
+.sample {
+  display: block;
+  outline: none;
+  font-size: 13.875em;
+  overflow-wrap: break-word;
+  width: 100%;
+  line-height: 0.9;
+  max-width: 100%;
+  text-align: center;
+  color: #1a1a1a;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ICASF-inspired typeface color variations */
+.sample:nth-child(8n+1) {
+  color: #000000; /* Pure black - strong contrast */
+}
+
+.sample:nth-child(8n+2) {
+  color: #2a2a2a; /* Dark charcoal */
+}
+
+.sample:nth-child(8n+3) {
+  color: #1a1a1a; /* Contemporary dark */
+}
+
+.sample:nth-child(8n+4) {
+  color: #333333; /* Gallery label gray */
+}
+
+.sample:nth-child(8n+5) {
+  color: #0d0d0d; /* Deep exhibition black */
+}
+
+.sample:nth-child(8n+6) {
+  color: #404040; /* Modern neutral */
+}
+
+.sample:nth-child(8n+7) {
+  color: #1f1f1f; /* Museum quality black */
+}
+
+.sample:nth-child(8n+8) {
+  color: #262626; /* Contemporary art dark */
+}
+
+#Icons {
+  font-size: 398px;
+  line-height: 1;
+}
+
+/* ==== INTERACTIVE ELEMENTS ==== */
+
+button {
+  font-family: 'Diatype Thin', 'Inter Thin', -apple-system, BlinkMacSystemFont, 'Segoe UI Light', 'Roboto Light', 'Helvetica Neue Light', Arial, sans-serif;
+  font-size: 0.875em;
+  margin: auto;
+  margin-top: 20px;
+  border: 2px solid black;
+  background: transparent;
+}
+
+/* Title buttons letter flip effect */
+.titleButtons {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.titleButtons .letter {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.titleButtons:hover .letter:nth-child(even) {
+  transform: scaleY(-1);
+}
+
+button:hover {
+  background: black;
+  color: white;
+}
+
+.titleButtons {
+  margin-top: 0px;
+  float: right;
+  color: black;
+  padding: 0px 10px;
+}
+
+.infoButtons {
+  margin-left: 0;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.infoButtons .letter {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.infoButtons:hover .letter:nth-child(even) {
+  transform: scaleY(-1);
+}
+
+#darkmode {
+  margin-right: 10px;
+  padding: 0px 20px;
+  padding-bottom: 3px;
+  border-radius: 30px;
+}
+
+/* ==== LINKS ==== */
+
+a {
+  text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.atag {
+  margin-top: 20px;
+  text-decoration: none;
+  color: inherit;
+  margin: auto;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.atag .letter {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.atag:hover .letter:nth-child(even) {
+  transform: scaleY(-1);
+}
+
+.downloadbutton {
+  text-decoration: none;
+  font-size: 1.875em;
+  padding-top: 10px;
+  text-transform: none;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* ==== FORM ELEMENTS ==== */
+
+  input {
+    appearance: inherit;
+    width: 80%;
+    background-color: #ffffff;
+    padding-top: 0px;
+    border-radius: 60px;
+    border: 1px solid #d0d0d0;
+    background: #ffffff;
+    height: 25px;
+    margin: 10px 0;
+    padding-left: 3px;
+    display: block;
+  }
+
+  .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+    appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #1a1a1a;
+  border: 1px solid #1a1a1a;
+    border-radius: 50px;
+  cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    border-radius: 50px;
+  cursor: pointer;
+  }
+
+  #leading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+/* ==== HOVER EFFECTS ==== */
+
+#fullautohp:hover {
+  text-decoration: none;
+}
+
+#aboutp:hover {
+  text-decoration: none;
+}
+
+#toolsp:hover {
+  text-decoration: none;
+}
+
+#collectionsTitle:hover {
+  text-decoration: none;
+}
+
+/* ==== TYPEFACE-SPECIFIC STYLES ==== */
+
+#Tess {
+  font-size: 248px;
+}
+
+/* ABC Diatype Edu Specific Styles */
+#ABCDiatypeEdu_Regular {
+  font-size: 180px;
+}
+
+#ABCDiatypeEdu_Bold {
+  font-size: 180px;
+}
+
+#ABCDiatypeEdu_Light {
+  font-size: 180px;
+}
+
+#ABCDiatypeEdu_Medium {
+  font-size: 180px;
+}
+
+#ABCDiatypeEdu_Thin {
+  font-size: 180px;
+}
+
+/* Individual Typeface Styles */
+#Brandon {
+  font-size: 260px;
+}
+
+#Callie {
+  font-size: 200px;
+}
+
+#Caroline {
+  font-size: 200px;
+}
+
+#Macy {
+  font-size: 200px;
+}
+
+#Rachel {
+  font-size: 200px;
+}
+
+#Rowan {
+  font-size: 200px;
+}
+
+#Tallulah {
+  font-size: 200px;
+}
+
+#Henry {
+  font-size: 298px;
+}
+
+#Marley {
+  line-height: 0.6;
+}
+
+#Luke {
+  font-size: 17.875rem;
+  line-height: 0.5;
+}
+
+#Isabelle {
+  font-size: 278px;
+}
+
+#Kian {
+  font-size: 298px;
+}
+
+#Jayden {
+  font-size: 298px;
+  line-height: 0.75;
+}
+
+#Diego {
+  font-size: 298px;
+  line-height: 0.5;
+}
+
+#Lila {
+  line-height: 1.1;
+}
+
+#Sam {
+  margin-top: 40px;
+  font-size: 398px;
+  line-height: 0.6;
+}
+
+/* ==== MEDIA QUERIES ==== */
+
+/* ==== HAMBURGER MENU STYLES ==== */
+
+.mobile-nav {
+  display: none;
+  position: relative;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.hamburger-line {
+  width: 40px;
+  height: 3px;
+  background-color: #1a1a1a;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+  display: block;
+}
+
+.hamburger-btn.active .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger-btn.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.hamburger-btn.active .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.mobile-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background-color: #ffffff;
+  border: 2px solid #1a1a1a;
+  border-radius: 8px;
+  padding: 8px 0;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.mobile-menu-item {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  text-align: left;
+  border: none;
+  background: none;
+  font-size: 1em;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-menu-item:hover {
+  background-color: transparent;
+}
+
+/* ==== MOBILE STYLES ==== */
+
+/* Tablet and smaller desktop (900px and below) */
+@media only screen and (max-width: 900px) {
+  /* Show mobile navigation, hide desktop navigation */
+  .mobile-nav {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .desktop-nav {
+    display: none;
+  }
+  
+  .typeInfo {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 18px;
+  }
+  
+  .allTypeThings {
+    gap: 15px;
+    padding: 0 15px;
+  }
+  
+  .className {
+    margin-bottom: 15px;
+  }
+  
+  /* Reduce typeface sizes for better mobile viewing */
+  .sample {
+    font-size: 10em; /* Reduced from 13.875em */
+  }
+  
+  #Tess {
+    font-size: 180px; /* Reduced from 248px */
+  }
+  
+  #Brandon {
+    font-size: 190px; /* Reduced from 260px */
+  }
+}
+
+/* Mobile (600px and below) */
+@media only screen and (max-width: 600px) {
+  .typeInfo {
+    padding: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .allTypeThings {
+    padding: 0 10px;
+    gap: 12px;
+  }
+  
+  .className {
+    margin-bottom: 12px;
+    font-size: 1.5em; /* Reduced from 1.875em */
+  }
+  
+  .typefaceName {
+    font-size: 1.4em; /* Reduced from 1.875em */
+  }
+  
+  .downloadbutton {
+    font-size: 1.4em; /* Reduced from 1.875em */
+    margin-bottom: 12px;
+  }
+  
+  input {
+    width: 95%;
+    margin: 8px 0;
+  }
+  
+  /* Further reduce typeface sizes for mobile */
+  .sample {
+    font-size: 7em; /* Further reduced for mobile */
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  #Tess {
+    font-size: 140px; /* Mobile-optimized size */
+  }
+  
+  #Brandon {
+    font-size: 150px; /* Mobile-optimized size */
+  }
+  
+  /* Adjust other individual typefaces for mobile */
+  #Callie, #Caroline, #Macy, #Rachel, #Rowan, #Tallulah {
+    font-size: 130px; /* Mobile-optimized size */
+  }
+}

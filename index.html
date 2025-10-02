@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" media="screen" />
+    <title>DSGN 101 Modular Typography</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.glitch.global/ddb6006c-caa0-43e6-abef-065a026137f5/favicon-16x16.png?v=1731301196773"
+    />
+  </head>
+  <body>
+    <div id="navigation">
+       <div id="info">
+        <a class="infoButtons" id="fullautohp" href="/"
+          >What Are Your Tools?
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="desktop-nav">
+          <div class="titleButtons" id="sketches" href="https://utkintermediatedesign.com/">
+           Three Seven One
+          </div>
+          <button class="titleButtons" id="about">About</button>
+        </div>
+        
+        <!-- Mobile Hamburger Menu -->
+        <div class="mobile-nav">
+          <button class="hamburger-btn" id="hamburger-toggle">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          
+          <div class="mobile-menu" id="mobile-menu">
+            <div class="titleButtons mobile-menu-item" id="sketches-mobile" href="https://utkintermediatedesign.com/">
+             Three Seven One
+            </div>
+            <button class="titleButtons mobile-menu-item" id="about-mobile">About</button>
+          </div>
+        </div>
+        
+        <!--    <button class="titleButtons" id="darkmode" onclick="darkMode()">Light Mode</button> -->
+      </div>
+    </div>
+
+    <div class="intro" id="intro">
+      <p id="introText">
+        After completing your designs for five modular words in Part I, you will
+        selected one word and expanded it into a complete uppercase alphabet
+        (A–Z). This alphabet built on your modular system and visual
+        characteristics you developed for that word, ensuring that the same
+        concept and structure were carried through every letter. Now you can use
+        these typefaces however you'd like!
+      </p>
+    </div>
+
+   
+
+    <div class="className">Fall 2025</div>
+    
+    <div class="allTypeThings">
+      <div class="typeInfo">
+        <div class="typefaceNameDIV">
+          <span class="typefaceName">Cora</span>
+        </div>
+        <div class="downloadbutton">
+          <a
+            class="atag"
+            href="./Fonts/Cora-optimized.ttf"
+            >Download</a
+          >
+        </div>
+        <input
+          class="slider"
+          type="range"
+          min="40"
+          max="1000"
+          value="40"
+          oninput="updateSize(this.value, Cora)"
+        />
+        <br />
+        <div
+          class="sample textarea"
+          id="Cora"
+          contenteditable="true"
+          spellcheck="false"
+          style="font-family: Cora"
+        >
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        </div>
+      </div>
+
+      <div class="typeInfo">
+        <div class="typefaceNameDIV">
+          <span class="typefaceName">Tess</span>
+        </div>
+        <div class="downloadbutton">
+          <a
+            class="atag"
+            href="./Fonts/Tess.otf"
+            >Download
+          </a>
+        </div>
+        <input
+          class="slider"
+          type="range"
+          min="40"
+          max="1000"
+          value="40"
+          oninput="updateSize(this.value, Tess)"
+        /><br />
+        <div
+          class="sample textarea"
+          id="Tess"
+          contenteditable="true"
+          spellcheck="false"
+          style="font-family: Tess"
+        >
+          abcdefghijklmnopqrstuvwxyz
+        </div>
+      </div>
+
+
+      <div class="typeInfo">
+        <div class="typefaceNameDIV">
+          <span class="typefaceName">Brandon</span>
+        </div>
+        <div class="downloadbutton">
+          <a class="atag" href="./Fonts/Brandon.otf">Download</a>
+        </div>
+        <input class="slider" type="range" min="40" max="1000" value="40" oninput="updateSize(this.value, Brandon)" />
+        <br />
+        <div class="sample textarea" id="Brandon" contenteditable="true" spellcheck="false" style="font-family: 'Brandon';">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        </div>
+      </div>
+
+      <div class="typeInfo">
+        <div class="typefaceNameDIV">
+          <span class="typefaceName">Callie</span>
+        </div>
+        <div class="downloadbutton">
+          <a class="atag" href="./Fonts/Callie.otf">Download</a>
+        </div>
+        <input class="slider" type="range" min="40" max="1000" value="40" oninput="updateSize(this.value, Callie)" />
+        <br />
+        <div class="sample textarea" id="Callie" contenteditable="true" spellcheck="false" style="font-family: 'Callie';">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        </div>
+      </div>
+
+      <div class="typeInfo">
+        <div class="typefaceNameDIV">
+          <span class="typefaceName">Caroline</span>
+        </div>
+        <div class="downloadbutton">
+          <a class="atag" href="./Fonts/Caroline.otf">Download</a>
+        </div>
+        <input class="slider" type="range" min="40" max="1000" value="40" oninput="updateSize(this.value, Caroline)" />
+        <br />
+        <div class="sample textarea" id="Caroline" contenteditable="true" spellcheck="false" style="font-family: 'Caroline';">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        </div>
+      </div>
+
+      <div class="typeInfo">
+        <div class="typefaceNameDIV">
+          <span class="typefaceName">Macy</span>
+        </div>
+        <div class="downloadbutton">
+          <a class="atag" href="./Fonts/Macy.otf">Download</a>
+        </div>
+        <input class="slider" type="range" min="40" max="1000" value="40" oninput="updateSize(this.value, Macy)" />
+        <br />
+        <div class="sample textarea" id="Macy" contenteditable="true" spellcheck="false" style="font-family: 'Macy';">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        </div>
+      </div>
+
+      <div class="typeInfo">
+        <div class="typefaceNameDIV">
+          <span class="typefaceName">Rachel</span>
+        </div>
+        <div class="downloadbutton">
+          <a class="atag" href="./Fonts/Rachel.otf">Download</a>
+        </div>
+        <input class="slider" type="range" min="40" max="1000" value="40" oninput="updateSize(this.value, Rachel)" />
+        <br />
+        <div class="sample textarea" id="Rachel" contenteditable="true" spellcheck="false" style="font-family: 'Rachel';">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        </div>
+      </div>
+
+      <div class="typeInfo">
+        <div class="typefaceNameDIV">
+          <span class="typefaceName">Rowan</span>
+        </div>
+        <div class="downloadbutton">
+          <a class="atag" href="./Fonts/Rowan.otf">Download</a>
+        </div>
+        <input class="slider" type="range" min="40" max="1000" value="40" oninput="updateSize(this.value, Rowan)" />
+        <br />
+        <div class="sample textarea" id="Rowan" contenteditable="true" spellcheck="false" style="font-family: 'Rowan';">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        </div>
+      </div>
+
+      <div class="typeInfo">
+        <div class="typefaceNameDIV">
+          <span class="typefaceName">Tallulah</span>
+        </div>
+        <div class="downloadbutton">
+          <a class="atag" href="./Fonts/Tallulah.otf">Download</a>
+        </div>
+        <input class="slider" type="range" min="40" max="1000" value="40" oninput="updateSize(this.value, Tallulah)" />
+        <br />
+        <div class="sample textarea" id="Tallulah" contenteditable="true" spellcheck="false" style="font-family: 'Tallulah';">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+      function updateSize(newVal, id) {
+        var newFontSize = newVal + "px";
+        $(id).css("font-size", newFontSize);
+      }
+
+      function updateLineHeight(newVal, id) {
+        var newFontSize = newVal + "px";
+        $(id).css("line-height", newFontSize);
+      }
+
+      // Wrap each letter in text elements with a span for the flip effect
+      document.addEventListener('DOMContentLoaded', function() {
+        const elementsToFlip = document.querySelectorAll('.titleButtons, .infoButtons, .atag, .className, .typefaceName');
+        
+        elementsToFlip.forEach(function(element) {
+          const text = element.textContent.trim();
+          element.innerHTML = '';
+          
+          for (let i = 0; i < text.length; i++) {
+            const char = text[i];
+            if (char === ' ') {
+              element.appendChild(document.createTextNode(' '));
+            } else {
+              const span = document.createElement('span');
+              span.className = 'letter';
+              span.textContent = char;
+              element.appendChild(span);
+            }
+          }
+        });
+        
+        // Hamburger menu functionality
+        const hamburgerToggle = document.getElementById('hamburger-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (hamburgerToggle && mobileMenu) {
+          hamburgerToggle.addEventListener('click', function() {
+            hamburgerToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+          });
+          
+          // Close menu when clicking outside
+          document.addEventListener('click', function(event) {
+            if (!hamburgerToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+              hamburgerToggle.classList.remove('active');
+              mobileMenu.classList.remove('active');
+            }
+          });
+          
+          // Close menu when clicking on menu items
+          const menuItems = document.querySelectorAll('.mobile-menu-item');
+          menuItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+              hamburgerToggle.classList.remove('active');
+              mobileMenu.classList.remove('active');
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
